@@ -11,7 +11,7 @@ def fun(l):
     while i >= 0:
         lista.append(l[i])
         i = i-1
-    return lista
+    return ' '.join(lista)
 
 
         
@@ -32,5 +32,5 @@ def cos(zdanie):
     
 
 
-cos("lo lol")
+cos("ala ma kota")
  
