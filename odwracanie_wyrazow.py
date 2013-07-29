@@ -1,3 +1,4 @@
+
 a = [1,2,3,4]
 def fun(l):
 
@@ -6,7 +7,7 @@ def fun(l):
     while i >= 0:
         lista.append(l[i])
         i = i-1
-    return ' '.join(lista)
+    return ''.join(lista)
 
 
         
