@@ -1,21 +1,18 @@
-   lista =  zdanie.split(';;')
-   library = {1:lista[0].split(":"), 2:lista[1].split(":"), 3:lista[2].split(":")}
-   klucze = library.keys()
+def slownik(zdanie):
 
-
-   print klucze
+ #  num = 1
+  # index = 0
+   library = {}
+   lista =  zdanie.split(";;")
+   for i in lista:
+       list1 = i.split(":")
+       e = ' '.join(list1)
+       library["cos"] = e
+       
+       print library
    
-   print(library[1])
    
-    
-
-               
-            
-            
-            
 
 
     
-
-    
-slownik('1:Jan:Kowalski:Szczęśliwa:12/5;;2:Adam:Szczęsny:Zachlapana:10;;')      
+slownik('1:Jan:Kowalski:Szczęśliwa:12/5;;2:Adam:Szczęsny:Zachlapana:10;;')    
