@@ -1,5 +1,7 @@
-data = '1:Jan:Kowalski:Szczęśliwa:12/5;;2:Adam:Szczęsny:Zachlapana:10'
+#-*- coding:UTF-8 -*-
 
+
+data = '1:Jan:Kowalski:Szczęśliwa:12/5;;2:Adam:Szczęsny:Zachlapana:10'
 def process_data(zdanie):
     lista = []
     lista_ziomkow =  zdanie.split(";;")
@@ -27,7 +29,8 @@ def get_names():
 #get_names()  
 
 
-def find_person(imie):
+def find_person(parametr, imie):
+
     for gosc in process_data(data):        
         imie2 = gosc["imie"]
         if imie == imie2:
@@ -35,4 +38,4 @@ def find_person(imie):
         else:
             print " "
     
-find_person("Jan")
+find_person(data, "Jan")
