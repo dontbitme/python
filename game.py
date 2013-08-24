@@ -9,22 +9,27 @@ imie2 = raw_input("Gracz2: Podaj imie: ")
 
 ilosc_rzutow = 3
 
+koles1 = 0
+koles2 = 0  
 for i in range(ilosc_rzutow):
     x = rzut_kostka()
     print "Gracz", imie, "wylosował",  x
+    koles1 = koles1+x
+ 
     
 for i in range(ilosc_rzutow):
     z = rzut_kostka()
     print "Gracz", imie2, "wylosował",  z
+    koles2 = koles2+z
 
 
 
 
 
 def kto_wygral():
-    if x > z:
+    if koles1 > koles2:
         print "Wygral", imie, "!"
-    elif x == z:
+    elif koles1 == koles2:
         print " Remis!"    
     else:
         print "Wygral", imie2, "!"      
