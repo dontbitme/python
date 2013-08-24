@@ -4,9 +4,12 @@ def rzut_kostka():
     return random.randint(1,6)
 #print rzut_kostka()   
 
+imie = raw_input("Gracz1: Podaj imie: ")
+imie2 = raw_input("Gracz2: Podaj imie: ")
 
 
-print "Kolej gracza player1"
+
+print "Kolej gracza", imie
 a = raw_input("Czy chcesz rzucić kostką?: ")
 if a == "tak":
     x = rzut_kostka()
@@ -18,7 +21,7 @@ else:
         
 
 
-print "Kolej gracza player2"
+print "Kolej gracza", imie2
 a = raw_input("Czy chcesz rzucić kostką?: ")
 if a == "tak":
     z = rzut_kostka()
@@ -30,10 +33,10 @@ else:
 
 def kto_wygral():
     if x > z:
-        print "Wygral player1!"
+        print "Wygral", imie, "!"
     elif x == z:
         print " Remis!"    
     else:
-        print "Wygral player2!"      
+        print "Wygral", imie2, "!"      
          
 kto_wygral()   
