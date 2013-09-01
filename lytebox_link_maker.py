@@ -10,6 +10,7 @@ def lytebox_link_maker(folder_location):
         else:
             print "Plik "+i+" nie jest obrazem."          
     plik.close()           
-    print open("tekst.log", "r")
+    dupa = open("tekst.log", "r")
+    print dupa.read()
 lytebox_link_maker("c:\\users\\Konrad\\desktop\\foty\\")
 
