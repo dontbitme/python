@@ -1,10 +1,10 @@
 import os
 
 def lytebox_link_maker(folder_location):
+    plik = open("tekst.log", "w") 
     for i in os.listdir(folder_location):
         (shortname, extension) = os.path.splitext(i)
-        cos = [".jpg",".gif", ".png"]   
-        plik = open("tekst.log", "w")     
+        cos = [".jpg",".gif", ".png"]       
         if extension in cos:
             open("tekst.log")
             plik.write( '<a href="images"'+ i +'" class="lytebox" data-lyte-options="group:vacation" data-title="Some Title">Nazwa</a>\n')
@@ -12,6 +12,6 @@ def lytebox_link_maker(folder_location):
         else:
             print "Plik "+i+" nie jest obrazem."
            
-        print plik.read()
+    print plik.read()
 lytebox_link_maker("c:\\users\\Konrad\\desktop\\foty\\")
 
