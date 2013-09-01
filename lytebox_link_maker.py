@@ -8,8 +8,8 @@ def lytebox_link_maker(folder_location):
         if extension in cos:
             plik.write( '<a href="images"'+ i +'" class="lytebox" data-lyte-options="group:vacation" data-title="Some Title">Nazwa</a>\n') 
         else:
-            print "Plik "+i+" nie jest obrazem."
+            print "Plik "+i+" nie jest obrazem."          
     plik.close()           
-    print plik.read()
+    print open("tekst.log", "r")
 lytebox_link_maker("c:\\users\\Konrad\\desktop\\foty\\")
 
