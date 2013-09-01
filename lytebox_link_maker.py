@@ -6,7 +6,6 @@ def lytebox_link_maker(folder_location):
         (shortname, extension) = os.path.splitext(i)
         cos = [".jpg",".gif", ".png"]       
         if extension in cos:
-            open("tekst.log")
             plik.write( '<a href="images"'+ i +'" class="lytebox" data-lyte-options="group:vacation" data-title="Some Title">Nazwa</a>\n')
             plik.close() 
         else:
